@@ -35,14 +35,13 @@ namespace TareaPIIultimaSemana.Controllers
             
             int comboBoxPrimero = Convert.ToInt32(conversor.CmbPrimero.SelectedIndex.ToString());
             int comboBoxSegundo = Convert.ToInt32(conversor.CmbSegundo.SelectedIndex.ToString());
-            //MessageBox.Show(Convert.ToString(comboBoxPrimero) + ""+Convert.ToString(comboBoxSegundo));
-
+            
             double MontoACalcular = Convert.ToDouble(conversor.txtMontoACalcular.Text);
             
             
             CambioMoneda cm = new CambioMoneda();
             double Resultado = cm.Convertir(comboBoxPrimero, comboBoxSegundo, MontoACalcular);
-            MessageBox.Show(Resultado.ToString());
+            //MessageBox.Show(Resultado.ToString());
             conversor.txtResultado.Text = Resultado.ToString();
 
         }

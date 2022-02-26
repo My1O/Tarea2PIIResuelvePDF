@@ -29,7 +29,7 @@
             <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Dolares"></ComboBoxItem>
             <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Euros"></ComboBoxItem>
         </ComboBox>
-        <ComboBox Name="CmbSegundo" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,0" Width="200" Background="LemonChiffon" VerticalAlignment="Center" Height="30">
+        <ComboBox Name="CmbSegundo" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,0" Width="200" Background="LemonChiffon" VerticalAlignment="Center" Height="30" HorizontalContentAlignment="Center">
             <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Cordobas"></ComboBoxItem>
             <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Dolares"></ComboBoxItem>
             <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Euros"></ComboBoxItem>
