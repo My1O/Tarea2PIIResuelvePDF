@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XjBNFyBHJUzjh0OpMW2gD3pgPmW7aoP/aTwVe3sM59Y9j8NBdXh9+6GsljlgyZWRWgsNtX/f8mFtl66oLt4jug==",
+  "success": true,
+  "projectFilePath": "C:\\Ing.Sis\\ProgramacionII\\ConversorTarea\\TareaPIIultimaSemana\\TareaPIIultimaSemana\\TareaPIIultimaSemana.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Camilo Castro\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\Camilo Castro\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

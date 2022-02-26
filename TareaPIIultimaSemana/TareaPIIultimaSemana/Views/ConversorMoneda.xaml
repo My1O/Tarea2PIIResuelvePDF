@@ -1,0 +1,43 @@
+﻿<Window x:Class="TareaPIIultimaSemana.Views.ConversorMoneda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TareaPIIultimaSemana.Views"
+        mc:Ignorable="d"
+        Title="ConversorMoneda" Height="620" Width="800">
+    <Grid Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="65"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Label Name="fecha" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" FontSize="25" FontWeight="Bold" Margin="5">Fecha</Label>
+        <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" Margin="180,0" FontSize="15">Moneda que tengo</Label>
+        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,180,0" FontSize="15">Moneda que deseo</Label>
+        <ComboBox SelectedItem="CmbPrimero" Name="MonedaConvertir" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="150,0,0,0" Width="200" Background="LemonChiffon" HorizontalContentAlignment="Center">
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" >Cordobas</ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Dolares</ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Euro</ComboBoxItem>
+        </ComboBox>
+        <ComboBox SelectedItem="CmbSegundo" Name="MontoConvertido" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,0" Width="200" Background="LemonChiffon" HorizontalContentAlignment="Center">
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Cordoba</ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Dolares</ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Euro</ComboBoxItem>
+        </ComboBox>
+        <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Margin="210,0,0,0" FontSize="15">Monto</Label>
+        <Label Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,230,0" FontSize="15">Monto</Label>
+        <TextBox Grid.Row="4" Grid.Column="0" Width="200" Background="LemonChiffon" Margin="150,30,0,0" HorizontalAlignment="Left" HorizontalContentAlignment="Center"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1" Width="200" Background="LemonChiffon" Margin="150,30,150,0" HorizontalAlignment="Right" HorizontalContentAlignment="Center"></TextBox>
+        <Button Grid.Row="5" Width="250" VerticalAlignment="Center" Margin="20,-70,20,40" x:Name="BtnCalcular">Calcular</Button>
+    </Grid>
+</Window>
