@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using TareaPIIultimaSemana.Models;
 using TareaPIIultimaSemana.Views;
 
 namespace TareaPIIultimaSemana.Controllers
@@ -31,11 +32,18 @@ namespace TareaPIIultimaSemana.Controllers
         {
             string fecha = DateTime.Now.Date.ToString("dd-MM-yyyy");
             conversor.fecha.Content = fecha;
-
-            string txtIngresoValor = conversor.MonedaConvertir.ToString();
-            string txtMontoResultado = conversor.MontoConvertido.ToString();
-            //string comboBoxSeleccionUno = conversor
             
+            int comboBoxPrimero = Convert.ToInt32(conversor.CmbPrimero.SelectedIndex.ToString());
+            int comboBoxSegundo = Convert.ToInt32(conversor.CmbSegundo.SelectedIndex.ToString());
+            //MessageBox.Show(Convert.ToString(comboBoxPrimero) + ""+Convert.ToString(comboBoxSegundo));
+
+            double MontoACalcular = Convert.ToDouble(conversor.txtMontoACalcular.Text);
+            
+            
+            CambioMoneda cm = new CambioMoneda();
+            double Resultado = cm.Convertir(comboBoxPrimero, comboBoxSegundo, MontoACalcular);
+            MessageBox.Show(Resultado.ToString());
+            conversor.txtResultado.Text = Resultado.ToString();
 
         }
     }

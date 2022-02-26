@@ -13,34 +13,21 @@ namespace TareaPIIultimaSemana.Models
 
         private double valorRegresar;
 
-        public double Convertir(string valorA, string valorB, double MontoMoneda)
+        public double Convertir(int optionA, int optionB, double MontoMoneda)
         {
-            String union = valorA + valorB;
-
-            switch (union)
+            if (optionA == 0 && optionB == 0)
             {
-                case "CordobasDolares":
-                    valorRegresar = MontoMoneda / Dolar;
-                    Console.WriteLine("Cordoba a Dolares: " + valorRegresar);
-                    break;
-                case "CordobasEuros":
-                    valorRegresar = MontoMoneda / Euro;
-                    break;
-                case "DolaresCordobas":
-                    valorRegresar = MontoMoneda * Dolar;
-                    break;
-                case "DolaresEuros":
-                    valorRegresar = MontoMoneda * 0.825297;
-                    break;
-                case "EurosCordobas":
-                    valorRegresar = MontoMoneda * Euro;
-                    break;
-                case "EurosDolares":
-                    valorRegresar = MontoMoneda * 1.21164;
-                    break;
+                Console.WriteLine("Monto sera el mismo" + valorRegresar);
             }
-            //Cambio 3
-            return 0.0;
+            else if (optionA == 0 && optionB == 1)
+            { 
+                valorRegresar = MontoMoneda / 35.00;
+            }else if (optionA == 0 && optionB == 2)
+            {
+                valorRegresar = MontoMoneda / 39.96;
+            }
+            
+            return valorRegresar;
         }
     }
 }

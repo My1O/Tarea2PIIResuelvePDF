@@ -24,20 +24,20 @@
         <Label Name="fecha" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" FontSize="25" FontWeight="Bold" Margin="5">Fecha</Label>
         <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" Margin="180,0" FontSize="15">Moneda que tengo</Label>
         <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,180,0" FontSize="15">Moneda que deseo</Label>
-        <ComboBox SelectedItem="CmbPrimero" Name="MonedaConvertir" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="150,0,0,0" Width="200" Background="LemonChiffon" HorizontalContentAlignment="Center">
-            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" >Cordobas</ComboBoxItem>
-            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Dolares</ComboBoxItem>
-            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Euro</ComboBoxItem>
+        <ComboBox Name="CmbPrimero" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="150,0,0,0" Width="200" Background="LemonChiffon" HorizontalContentAlignment="Center" Height="30">
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Cordobas"></ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Dolares"></ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Euros"></ComboBoxItem>
         </ComboBox>
-        <ComboBox SelectedItem="CmbSegundo" Name="MontoConvertido" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,0" Width="200" Background="LemonChiffon" HorizontalContentAlignment="Center">
-            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Cordoba</ComboBoxItem>
-            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Dolares</ComboBoxItem>
-            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch">Euro</ComboBoxItem>
+        <ComboBox Name="CmbSegundo" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,0" Width="200" Background="LemonChiffon" VerticalAlignment="Center" Height="30">
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Cordobas"></ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Dolares"></ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Euros"></ComboBoxItem>
         </ComboBox>
         <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Margin="210,0,0,0" FontSize="15">Monto</Label>
         <Label Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,230,0" FontSize="15">Monto</Label>
-        <TextBox Grid.Row="4" Grid.Column="0" Width="200" Background="LemonChiffon" Margin="150,30,0,0" HorizontalAlignment="Left" HorizontalContentAlignment="Center"></TextBox>
-        <TextBox Grid.Row="4" Grid.Column="1" Width="200" Background="LemonChiffon" Margin="150,30,150,0" HorizontalAlignment="Right" HorizontalContentAlignment="Center"></TextBox>
+        <TextBox Name="txtMontoACalcular" Grid.Row="4" Grid.Column="0" Width="200" Background="LemonChiffon" Margin="150,30,0,0" HorizontalAlignment="Left" HorizontalContentAlignment="Center"></TextBox>
+        <TextBox Name="txtResultado" Grid.Row="4" Grid.Column="1" Width="200" Background="LemonChiffon" Margin="150,30,150,0" HorizontalAlignment="Right" HorizontalContentAlignment="Center"></TextBox>
         <Button Grid.Row="5" Width="250" VerticalAlignment="Center" Margin="20,-70,20,40" x:Name="BtnCalcular">Calcular</Button>
     </Grid>
 </Window>
